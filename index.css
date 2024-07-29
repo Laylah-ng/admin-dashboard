@@ -6,8 +6,12 @@
     font-family: roboto, arial;
 }
 :root{
-    --bg-color: rgb(106, 106, 235)
+    --bg-color: rgb(106, 106, 235);
+    --small-width: 20px;
+    --small-height: 20px;
+    --light-blue: rgb(221, 221, 253);
 }
+/* aside section */
 aside{
     background-color: var(--bg-color);
     width: 200px;
@@ -17,8 +21,8 @@ aside{
     left:0;
 }
 aside img:not(.dash){
-    width: 20px;
-    height:20px;
+    width: var(--small-width);
+    height: var(var(--small-height))
     
 }
 .dash{
@@ -33,7 +37,7 @@ aside img:not(.dash){
 li{
     list-style-type: none;
 }
-a{
+aside a{
     text-decoration: none;
     color: white;
     display: grid;
@@ -45,4 +49,97 @@ a{
 }
 .dash-container > span{
     font-size: 1.2rem;
+}
+/* header */
+header{
+    position:fixed;
+    top: 0;
+    left: 200px;
+    height: 120px;
+    width: 100%;
+
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    
+}
+.top img:not(.panda){
+    width: var(--small-width);
+    height: var(--small-height)
+}
+.panda{
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    padding: 4px;
+    border-radius: 50%;
+}
+.top{
+     display: grid;
+     grid-template-columns: 2fr 0.9fr;
+    align-items: center;
+    padding-bottom: 10px;
+    
+}
+.not-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    gap: 8px
+
+}
+input{
+    width: 70%;
+    height: 25px;
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    border: none
+}
+.not-container a, .username{
+    text-decoration: none;
+    color: black
+}
+.big-panda{
+    width:35px;
+    height: 35px;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 5px
+}
+.morgan-container{
+    display: flex;
+    align-items: center;
+    gap: 15px
+    
+}
+nav{
+      display: grid;
+     grid-template-columns: 2fr 1fr;
+     align-items: center;
+}
+nav p{
+    line-height: 1px;
+}
+.hi{
+    font-size: 0.7rem;
+}
+.btn-container button{
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    background-color: var(--bg-color);
+    border: none;
+    color: white;
+}
+/* main */
+main{
+    background-color: var(--light-blue);
+    
 }
