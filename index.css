@@ -2,3 +2,47 @@
   font-family: roboto;
   src: url(/font/Roboto\ \(2\).zip);
 }
+*{
+    font-family: roboto, arial;
+}
+:root{
+    --bg-color: rgb(106, 106, 235)
+}
+aside{
+    background-color: var(--bg-color);
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+aside img:not(.dash){
+    width: 20px;
+    height:20px;
+    
+}
+.dash{
+    height: 30px;    
+}
+.dash-container{
+    padding:10px 0 15px 0;
+}
+.setting-container{
+    padding-top: 20px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,30px);
+    align-items: center;
+    margin-left: 15px;
+    line-height: 40px;
+
+}
+.dash-container > span{
+    font-size: 1.2rem;
+}
